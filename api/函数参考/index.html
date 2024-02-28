@@ -1,0 +1,1504 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/api/%E5%87%BD%E6%95%B0%E5%8F%82%E8%80%83/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../%E6%A6%82%E5%BF%B5%E5%8F%82%E8%80%83/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
+    
+    
+      
+        <title>function - MkLorum</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MkLorum" class="md-header__button md-logo" aria-label="MkLorum" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkLorum
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              function
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MkLorum" class="md-nav__button md-logo" aria-label="MkLorum" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MkLorum
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    function
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    function
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      第1章 玩具总动员
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第1章 玩具总动员">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#car" class="md-nav__link">
+    <span class="md-ellipsis">
+      car
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdr" class="md-nav__link">
+    <span class="md-ellipsis">
+      cdr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      cons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      null?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atom" class="md-nav__link">
+    <span class="md-ellipsis">
+      atom?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    <span class="md-ellipsis">
+      eq?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      第2章 处理，处理，反复处理……
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第2章 处理，处理，反复处理……">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lat" class="md-nav__link">
+    <span class="md-ellipsis">
+      lat?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#member" class="md-nav__link">
+    <span class="md-ellipsis">
+      member?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      第3章 用cons构筑恢宏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第3章 用cons构筑恢宏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rember" class="md-nav__link">
+    <span class="md-ellipsis">
+      rember
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firsts" class="md-nav__link">
+    <span class="md-ellipsis">
+      firsts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertr" class="md-nav__link">
+    <span class="md-ellipsis">
+      insertR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertl" class="md-nav__link">
+    <span class="md-ellipsis">
+      insertL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subst" class="md-nav__link">
+    <span class="md-ellipsis">
+      subst
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subst2" class="md-nav__link">
+    <span class="md-ellipsis">
+      subst2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multirember" class="md-nav__link">
+    <span class="md-ellipsis">
+      multirember
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiinsertr" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiinsertR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiinsertl" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiinsertL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multisubst" class="md-nav__link">
+    <span class="md-ellipsis">
+      multisubst
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      第4章 数字游戏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第4章 数字游戏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add1" class="md-nav__link">
+    <span class="md-ellipsis">
+      add1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub1" class="md-nav__link">
+    <span class="md-ellipsis">
+      sub1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      zero?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      o+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o-" class="md-nav__link">
+    <span class="md-ellipsis">
+      o-
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addtup" class="md-nav__link">
+    <span class="md-ellipsis">
+      addtup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      o*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tup" class="md-nav__link">
+    <span class="md-ellipsis">
+      tup+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      o&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      o&lt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      o=
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ↑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      o/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A6%82%E5%BF%B5%E5%8F%82%E8%80%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      第1章 玩具总动员
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第1章 玩具总动员">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#car" class="md-nav__link">
+    <span class="md-ellipsis">
+      car
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdr" class="md-nav__link">
+    <span class="md-ellipsis">
+      cdr
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      cons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      null?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atom" class="md-nav__link">
+    <span class="md-ellipsis">
+      atom?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eq" class="md-nav__link">
+    <span class="md-ellipsis">
+      eq?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      第2章 处理，处理，反复处理……
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第2章 处理，处理，反复处理……">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lat" class="md-nav__link">
+    <span class="md-ellipsis">
+      lat?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#member" class="md-nav__link">
+    <span class="md-ellipsis">
+      member?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      第3章 用cons构筑恢宏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第3章 用cons构筑恢宏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rember" class="md-nav__link">
+    <span class="md-ellipsis">
+      rember
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firsts" class="md-nav__link">
+    <span class="md-ellipsis">
+      firsts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertr" class="md-nav__link">
+    <span class="md-ellipsis">
+      insertR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertl" class="md-nav__link">
+    <span class="md-ellipsis">
+      insertL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subst" class="md-nav__link">
+    <span class="md-ellipsis">
+      subst
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subst2" class="md-nav__link">
+    <span class="md-ellipsis">
+      subst2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multirember" class="md-nav__link">
+    <span class="md-ellipsis">
+      multirember
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiinsertr" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiinsertR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiinsertl" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiinsertL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multisubst" class="md-nav__link">
+    <span class="md-ellipsis">
+      multisubst
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      第4章 数字游戏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第4章 数字游戏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add1" class="md-nav__link">
+    <span class="md-ellipsis">
+      add1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub1" class="md-nav__link">
+    <span class="md-ellipsis">
+      sub1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      zero?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o" class="md-nav__link">
+    <span class="md-ellipsis">
+      o+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o-" class="md-nav__link">
+    <span class="md-ellipsis">
+      o-
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addtup" class="md-nav__link">
+    <span class="md-ellipsis">
+      addtup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      o*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tup" class="md-nav__link">
+    <span class="md-ellipsis">
+      tup+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      o&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      o&lt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      o=
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ↑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      o/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">函数参考</h1>
+<h2 id="1">第1章 玩具总动员</h2>
+<h3 id="car">car</h3>
+<p>获取l（list，非null list）的第1个S-expression  </p>
+<pre><code class="language-scheme">; (car list)
+(car l)
+</code></pre>
+<h3 id="cdr">cdr</h3>
+<p>获取l（list，非null list）扣除<code>(car list)</code>的部分，也是一个list  </p>
+<pre><code class="language-scheme">; (cdr list)
+(cdr l)
+</code></pre>
+<h3 id="cons">cons</h3>
+<p>添加一个x（S-expression）到一个l（list）的开头处，并返回新的l</p>
+<pre><code class="language-scheme">; (cons S-expression list)
+(cons x l)
+</code></pre>
+<h3 id="null">null?</h3>
+<p>判断l（list）是否为null list</p>
+<pre><code class="language-scheme">; (null? list)
+(null? l)
+</code></pre>
+<h3 id="atom">atom?</h3>
+<p>判断x（S-expression）是否为atom</p>
+<pre><code class="language-scheme">(define atom?
+  (lambda (x)
+    (and (not (pair? x))
+         (not (null? x)))))
+
+; (atom? S-expression)
+(atom x)
+</code></pre>
+<h3 id="eq">eq?</h3>
+<p>判断两个原子（非数字）a1和a2是否相同</p>
+<pre><code class="language-scheme">; (eq? atom atom)
+(eq? a1 a2)
+</code></pre>
+<h2 id="2">第2章 处理，处理，反复处理……</h2>
+<h3 id="lat">lat?</h3>
+<p>判断l（list）是否为list of atom</p>
+<pre><code class="language-scheme">(define lat?
+  (lambda (l)
+    (cond
+      ((null? l) #t)
+      (else
+       (and (atom? (car l))
+            (lat? (cdr l)))))))
+
+; (lat? list)
+(lat? l)
+</code></pre>
+<h3 id="member">member?</h3>
+<p>判断a（atom）是否在lat（list of atom）中</p>
+<pre><code class="language-scheme">(define member?
+  (lambda (a lat)
+    (cond
+      ((null? lat) #f)
+      (else
+       (or (eq? a (car lat))
+           (member? a (cdr lat)))))))
+
+; (member? atom list-of-atom)
+(member? a lat)
+</code></pre>
+<h2 id="3-cons">第3章 用cons构筑恢宏</h2>
+<h3 id="rember">rember</h3>
+<p>删除lat（list of atom）中的第一个a（atom），并返回新的lat；若lat中没有a，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define rember
+  (lambda (a lat)
+    (cond
+      ((null? lat) `())
+      ((eq? a (car lat))
+       (cdr lat))
+      (else
+       (cons (car lat)
+             (rember a (cdr lat)))))))
+
+; (rember atom list-of-atom)
+(rember a lat)
+</code></pre>
+<h3 id="firsts">firsts</h3>
+<p>获取l（list，这个list要么是null list，要么只包含非null list）中每个内部list的第1个S-expression（即<code>(car list)</code>）所构成的list</p>
+<pre><code class="language-scheme">(define firsts
+  (lambda (l)
+    (cond
+      ((null? l) `())
+      (else
+       (cons (car (car l))
+             (firsts (cdr l)))))))
+
+; (firsts list)
+(firsts l)
+</code></pre>
+<h3 id="insertr">insertR</h3>
+<p>在lat（list of atom）的第1个old（atom）的右边插入new（atom），并返回新的lat；若lat中没有old，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define insertR
+  (lambda (new old lat)
+    (cond
+      ((null? lat) `())
+      ((eq? (car lat) old)
+       (cons old
+             (cons new (cdr lat))))
+      (else
+       (cons (car lat)
+             (insertR new old (cdr lat)))))))
+
+; (insertR atom atom list-of-atom)
+(insertR new old lat)
+</code></pre>
+<h3 id="insertl">insertL</h3>
+<p>在lat（list of atom）的第1个old（atom）的左边插入new（atom），并返回新的lat；若lat中没有old，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define insertL
+  (lambda (new old lat)
+    (cond
+      ((null? lat) `())
+      ((eq? (car lat) old)
+       (cons new lat))
+      (else
+       (cons (car lat)
+             (insertL new old (cdr lat)))))))
+
+
+; (insertL atom atom list-of-atom)
+(insertL new old lat)
+</code></pre>
+<h3 id="subst">subst</h3>
+<p>用new（atom）代替lat（list of atom）中的首个old（atom），并返回新的lat；若lat中没有old，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define subst
+  (lambda (new old lat)
+    (cond
+      ((null? lat) `())
+      ((eq? (car lat) old)
+       (cons new (cdr lat)))
+      (else
+       (cons (car lat)
+             (subst new old (cdr lat)))))))
+
+; (subst atom atom list-of-atom)
+(subst new old lat)
+</code></pre>
+<h3 id="subst2">subst2</h3>
+<p>用new（atom）代替lat中的首个o1或首个o2，并返回新的lat；若lat中没有o1和o2，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define subst2
+  (lambda (new o1 o2 lat)
+    (cond
+      ((null? lat) `())
+      ((or (eq? (car lat) o1)
+           (eq? (car lat) o2))
+       (cons new (cdr lat)))
+      (else
+       (cons (car lat)
+             (subst2 new o1 o2 (cdr lat)))))))
+
+; (subst2 atom atom atom list-of-atom)
+(subst2 new o1 o2 lat)
+</code></pre>
+<h3 id="multirember">multirember</h3>
+<p>返回移除了所有a（atom）的lat（list of atom）；若lat中没有a，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define multirember
+  (lambda (a lat)
+    (cond
+      ((null? lat) `())
+      ((eq? (car lat) a)
+       (multirember a (cdr lat)))
+      (else
+       (cons (car lat)
+             (multirember a (cdr lat)))))))
+
+; (multirember atom list-of-atom)
+(multirember a lat)
+</code></pre>
+<h3 id="multiinsertr">multiinsertR</h3>
+<p>在lat（list of atom）中所有的old（atom）的右边都插入new（atom），并返回新的lat；若lat中没有old，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define multiinsertR
+  (lambda (new old lat)
+    (cond
+      ((null? lat) `())
+      ((eq? (car lat) old)
+       (cons old
+             (cons new
+                   (multiinsertR (cdr lat)))))
+      (else
+       (cons (car lat)
+             (multiinsertR new old (cdr lat)))))))
+
+; (multiinsertR atom atom list-of-atom)
+(multiinsertR new old lat)
+</code></pre>
+<h3 id="multiinsertl">multiinsertL</h3>
+<p>在lat（list of atom）中所有的old（atom）的左边都插入new（atom），并返回新的lat；若lat中没有old，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define multiinsertL
+  (lambda (new old lat) 
+    (cond 
+      ((null? lat) `())  
+      ((eq? (car lat) old) 
+       (cons new
+             (cons old 
+                   (multiinsertL new old (cdr lat))))) 
+      (else
+       (cons (car lat)
+             (multiinsertL new old (cdr lat))))))) 
+
+; (multiinsertL atom atom list-of-atom)
+(multiinsertL new old lat)
+</code></pre>
+<h3 id="multisubst">multisubst</h3>
+<p>用new（atom）代替lat（list of atom）中的所有old（atom），并返回新的lat；若lat中没有old，则lat保持原态，并返回新的lat</p>
+<pre><code class="language-scheme">(define multisubst
+  (lambda (new old lat)
+    (cond
+      ((null? lat) `())
+      ((eq? (car lat) old)
+       (cons new
+             (multisubst new old (cdr lat))))
+      (else
+       (cons (car lat)
+             (multisubst new old (cdr lat)))))))
+
+; (multisubst atom atom list-of-atom)
+(multisubst new old lat)
+</code></pre>
+<h2 id="4">第4章 数字游戏</h2>
+<h3 id="add1">add1</h3>
+<p>n加1</p>
+<pre><code class="language-scheme">(define add1
+  (lambda (n)
+    (+ n 1)))
+
+; (add1 natural-number)
+(add1 n)
+</code></pre>
+<h3 id="sub1">sub1</h3>
+<p>n减1</p>
+<pre><code class="language-scheme">(define sub1
+  (lambda (n)
+    (- n 1)))
+
+; (sub1 natural-number)
+(sub1 n)
+</code></pre>
+<h3 id="zero">zero?</h3>
+<p>判断n是否为0</p>
+<pre><code class="language-scheme">; (zero? tatural-number)
+(zero? n)
+</code></pre>
+<h3 id="o">o+</h3>
+<p>n加m</p>
+<pre><code class="language-scheme">(define o+
+  (lambda (n m)
+    (cond
+      ((zero? m) n)
+      (else
+       (add1 (o+ n (sub1 m)))))))
+
+; (o+ natural-number natural-number)
+(o+ n m)
+</code></pre>
+<h3 id="o-">o-</h3>
+<p>n减m</p>
+<pre><code class="language-scheme">(define o-
+  (lambda (n m)
+    (cond
+      ((zero? m) n)
+      (else
+       (sub1 (o- n (sub1 m)))))))
+
+; (o- natural-number natural-number)
+(o- n m)
+</code></pre>
+<h3 id="addtup">addtup</h3>
+<pre><code class="language-scheme">; 计算tup的总和，当tup为null list时，总和为0
+; (addtup tup)
+; (addtup tup)
+(define addtup
+  (lambda (tup)
+    (cond
+      ((null? tup) 0)
+      (else
+       (o+ (car tup)
+           (addtup (cdr tup)))))))
+</code></pre>
+<h3 id="o_1">o*</h3>
+<pre><code class="language-scheme">; n乘m
+; (o* n m)
+; (o* natural-number natural-number)
+; (o* 1 2) -&gt; 2 
+(define o*
+  (lambda (n m)
+    (cond
+      ((zero? m) 0)
+      (else
+       (o+ n (o* n (sub1 m)))))))
+</code></pre>
+<h3 id="tup">tup+</h3>
+<pre><code class="language-scheme">; tup1内的个个natural-number与tup2对应位置的natural-number相加；若tup1与tup2长度不同，则较长的tup的剩余部分保持原态
+; C：(tup+ tup1 tup2)
+; T：(tup+ tup tup)
+; E：(tup+ `(1 2 3) `(1 2 3)) -&gt; `(2 4 6)
+;  ：(tup+ `(2 1 5 4) `(1 2 3)) -&gt; `(3 3 8 4)
+(define tup+
+  (lambda (tup1 tup2)
+    (cond
+      ((null? tup1) tup2)
+      ((null? tup2) tup1)
+      (else
+       (cons (o+ (car tup1) (car tup2))
+             (tup+ (cdr tup1) (cdr tup2)))))))
+</code></pre>
+<h3 id="o_2">o&gt;</h3>
+<pre><code class="language-scheme">; 判断n是否大于m
+; C：(o&gt; n m)
+; T：(o&gt; n[natural-number] m[natural-number]) -&gt; boolean
+; E：(o&gt; 1 2) -&gt; #f
+;  ：(o&gt; 4 2) -&gt; #t
+(define o&gt;
+  (lambda (n m)
+    (cond
+      ((zero? n) #f)
+      ((zero? m) #t)
+      (else
+       (o&gt; (sub1 n) (sub1 m))))))
+</code></pre>
+<h3 id="o_3">o&lt;</h3>
+<pre><code class="language-scheme">; 判断n是否小于m
+; C：(o&lt; n m)
+; T：(o&lt; n[natural-number] m[natural-number]) -&gt; boolean
+; E：(o&lt; 1 2) -&gt; #t
+;  ：(o&lt; 4 2) -&gt; #f
+(define o&lt;
+  (lambda (n m)
+    (cond
+      ((zero? m) #f)
+      ((zero? n) #t)
+      (else
+       (o&lt; (sub1 n) (sub1 m))))))
+</code></pre>
+<h3 id="o_4">o=</h3>
+<pre><code class="language-scheme">; 判断n是否等于m
+; C：(o= n m)
+; T：(o= n[natural-number] m[natural-number]) -&gt; boolean
+; E：(o= 2 2) -&gt; #t
+;  ：(o= 4 2) -&gt; #f
+(define o=
+  (lambda (n m)
+    (cond
+      ((or (o&gt; n m)
+           (o&lt; n m))
+       #f)
+      (else #t))))
+</code></pre>
+<h3 id="_2">↑</h3>
+<pre><code class="language-scheme">; 判断n是否等于m
+; C：(o= n m)
+; T：(o= n[natural-number] m[natural-number]) -&gt; boolean
+; E：(o= 2 2) -&gt; #t
+;  ：(o= 4 2) -&gt; #f
+(define o=
+  (lambda (n m)
+    (cond
+      ((or (o&gt; n m)
+           (o&lt; n m))
+       #f)
+      (else #t))))
+</code></pre>
+<h3 id="o_5">o/</h3>
+<pre><code class="language-scheme">; C：(o/ n m)
+; T：(o/ n[natural-number] m[natural-number]) -&gt; natural-number
+; I：求n除以m的商
+; E：(o/ 4 2) -&gt; 2
+;  ：(o/ 5 2) -&gt; 2
+(define o/
+  (lambda (n m)
+    (cond
+      ((o&lt; n m) 0)
+      (else
+       (add1 (o/ (o- n m) m))))))
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
